@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_75sdp"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:id="@+id/rlLeft"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp">
+
+            <ImageView
+                android:id="@+id/mImage"
+                android:layout_width="@dimen/_85sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:background="@drawable/image_background"
+                android:outlineProvider="background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample" />
+
+            <LinearLayout
+                android:id="@+id/llProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:animateLayoutChanges="true"
+                android:background="#80000000"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.app.adprogressbarlib.AdCircleProgress
+                    android:id="@+id/downloadProgress"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    app:adpgb_finished_color="@color/yellow"
+                    app:adpgb_finished_stroke_width="5dp"
+                    app:adpgb_show_text="true"
+                    app:adpgb_text_color="@color/yellow"
+                    app:adpgb_text_size="8dp"
+                    app:adpgb_unfinished_color="#80F6BE47"
+                    app:adpgb_unfinished_stroke_width="5dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/rlLeft"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:maxLines="1"
+                android:text="Downloading..."
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/llRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/imgDownload"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_download" />
+
+                <ImageView
+                    android:id="@+id/imgShare"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_share" />
+
+                <ImageView
+                    android:id="@+id/imgWhatsApp"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:src="@drawable/ic_whatsapp_logo" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#c1c1c1" />
+
+
+    </RelativeLayout>
+</layout>

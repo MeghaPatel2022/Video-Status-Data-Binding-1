@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">VidStatus</string>
+    <string name="hot_status_amp_trending" translatable="false"><![CDATA[Hot Status & Trending]]></string>
+    <string name="_50_category_status" translatable="false">50+Category Status</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="vw_rationale_storage" translatable="false">Need Reading Storage Permission for Picking Files</string>
+    <string name="privacy_policy" translatable="false">https://accurateweatherforecast.blogspot.com/2021/02/weather-privacy-policy.html</string>
+
+    <string name="app_id" translatable="false">ca-app-pub-1064360693704150~4509070899</string>
+    <!--    <string name="banner_ad" translatable="false">ca-app-pub-1064360693704150/6943662548</string>-->
+    <string name="banner_ad" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="fb_banner_placementID" translatable="false">422272992369299_422273292369269</string>
+    <string name="fb_inter_placementID" translatable="false">521075155719800_521075769053072</string>
+    <string name="facebook_app_id" translatable="false">521075155719800</string>
+
+</resources>

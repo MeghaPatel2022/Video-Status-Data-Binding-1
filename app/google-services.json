@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "651293665892",
+    "project_id": "vidstatus-funny-video",
+    "storage_bucket": "vidstatus-funny-video.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651293665892:android:05205874205e99902c8d71",
+        "android_client_info": {
+          "package_name": "apps.vidstatus.android.shotvideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651293665892-udaj20rjq3jon3fnkpoj9gg4ndk3hqb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATmRAM9xEY098K47h5RcPFtjl9HLAWraw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651293665892-udaj20rjq3jon3fnkpoj9gg4ndk3hqb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

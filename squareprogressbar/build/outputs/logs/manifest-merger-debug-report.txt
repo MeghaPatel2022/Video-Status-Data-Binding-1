@@ -1,0 +1,35 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:1:1-10:12
+INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:2:5-43
+		INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+		INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:4:5-32
+	xmlns:android
+		ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:3:5-29
+application
+ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:6:5-8:56
+	android:label
+		ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:8:9-41
+	android:allowBackup
+		ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml:7:9-35
+uses-sdk
+INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+		ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+		INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+		ADDED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml
+		INJECTED from D:\Megha\NewGitRepo\Video-Status-Data-Binding-1\squareprogressbar\AndroidManifest.xml

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="category"
+            type="apps.vidstatus.android.shotvideo.model.category.LanguageItem" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_3sdp">
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/imgTab"
+            android:background="@drawable/languge_draw"
+            android:gravity="center"
+            android:padding="@dimen/_7sdp"
+            android:singleLine="true"
+            android:text="@{category.catName}"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+</layout>

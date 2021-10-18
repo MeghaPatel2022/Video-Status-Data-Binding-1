@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="apps.vidstatus.android.shotvideo.MainActivity.MyClickHandlers" />
+    </data>
+
+    <apps.vidstatus.android.shotvideo.view.FullDrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/rlNoInternet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgNoInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_no_internet" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:background="@color/white"
+                android:paddingTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/imgMenu"
+                    android:layout_width="?actionBarSize"
+                    android:layout_height="match_parent"
+                    android:onClick="@{onClick::onMenuClick}"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_menu" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/lato_black"
+                    android:gravity="center"
+                    android:text="New"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/banner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlTop"
+                android:background="@color/white"
+                android:orientation="vertical" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/top_navigation_constraint"
+                android:layout_below="@+id/banner_container"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/bottom_curve"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp" />
+
+            <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+                android:id="@+id/top_navigation_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black"
+                android:elevation="4dp"
+                android:padding="12dp"
+                app:bnc_mode="spread">
+
+                <com.gauravk.bubblenavigation.BubbleToggleView
+                    android:id="@+id/tabNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bt_active="false"
+                    app:bt_colorActive="@color/black"
+                    app:bt_colorInactive="#C1C1C1"
+                    app:bt_icon="@drawable/ic_new_active"
+                    app:bt_padding="@dimen/_7sdp"
+                    app:bt_shape="@drawable/bottom_shap"
+                    app:bt_title="New"
+                    app:bt_titlePadding="@dimen/_5sdp" />
+
+                <com.gauravk.bubblenavigation.BubbleToggleView
+                    android:id="@+id/tabTrensing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bt_active="false"
+                    app:bt_colorActive="@color/black"
+                    app:bt_colorInactive="#C1C1C1"
+                    app:bt_icon="@drawable/ic_trending_active"
+                    app:bt_padding="@dimen/_7sdp"
+                    app:bt_shape="@drawable/bottom_shap"
+                    app:bt_title="Trending"
+                    app:bt_titlePadding="@dimen/_5sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/tabNew" />
+
+                <com.gauravk.bubblenavigation.BubbleToggleView
+                    android:id="@+id/tabCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bt_active="false"
+                    app:bt_colorActive="@color/black"
+                    app:bt_colorInactive="#C1C1C1"
+                    app:bt_icon="@drawable/ic_category_active"
+                    app:bt_padding="@dimen/_7sdp"
+                    app:bt_shape="@drawable/bottom_shap"
+                    app:bt_title="Category"
+                    app:bt_titlePadding="@dimen/_5sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/tabTrensing" />
+
+                <com.gauravk.bubblenavigation.BubbleToggleView
+                    android:id="@+id/tabSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bt_active="false"
+                    app:bt_colorActive="@color/black"
+                    app:bt_colorInactive="#C1C1C1"
+                    app:bt_icon="@drawable/ic_search_active"
+                    app:bt_padding="@dimen/_7sdp"
+                    app:bt_shape="@drawable/bottom_shap"
+                    app:bt_title="Search"
+                    app:bt_titlePadding="@dimen/_5sdp"
+                    app:layout_constraintLeft_toRightOf="@+id/tabCategory" />
+
+                <!-- Add more child items here - max upto 5 -->
+
+            </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/navListDesign"
+                layout="@layout/navigation_design" />
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </apps.vidstatus.android.shotvideo.view.FullDrawerLayout>
+
+</layout>
